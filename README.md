@@ -2,7 +2,7 @@
 
 ## This is Haoming Guo, aka Kimi
 
-I am a _student_👨‍🎓, a _developer_👨‍💻, an _enigneer_👨‍🔧, a _game player_🥷, a _rap music lover_🤩, a _fitness lover_🏋，a _clown_🤡, a _loser_🥲, a _winner_🤫.
+I am a * *student* *👨‍🎓, a * *developer* *👨‍💻, an * *enigneer* *👨‍🔧, a * *game player* *🥷, a * *rap music lover* *🤩, a * *fitness lover* *🏋，a * *clown* *🤡, a * *loser* *🥲, a * *winner* *🤫.
 
 I am currently majoring in **Applied Data Science** in ***Unversity of Southern California***
 
