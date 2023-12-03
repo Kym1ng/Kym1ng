@@ -1,4 +1,6 @@
-### Hi there 👋
+### Hi there 👋 👀 👋
+
+## This is Haoming Guo, aka Kimi
 
 <!--
 **Kym1ng/Kym1ng** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
