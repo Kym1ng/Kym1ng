@@ -15,7 +15,7 @@ I'm an enthusiast for all things data, a tinkerer in engineering, a connoisseur 
 - **Programming Languages**: Proficient in C++, C#, Java, Python, SQL, R, HTML5, CSS
 - **Technical Skills**: Skilled in Machine Learning with TensorFlow and PyTorch; experienced in Data Management
 
-### Work & Internships
+### Experience
 
 💻 **Student Worker at USC Stevens Neuroimaging and Informatics Institute**  
 Jan 2024 - Present, Los Angeles, CA  
