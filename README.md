@@ -19,7 +19,7 @@ I'm an enthusiast for all things data, a tinkerer in engineering, a connoisseur 
 
 💻 **Student Worker at USC Stevens Neuroimaging and Informatics Institute**  
 Jan 2024 - Present, Los Angeles, CA  
-Engaging with Riemannian metric optimization on surfaces (RMOS) for intrinsic brain mapping.
+Use machine learning algorithms for brain shape analysis to tackle Alzheimer's disease
 
 💻 **AI Engineer Intern at Tencent Holdings Ltd.**  
 Jun 2023 - Oct 2023, China  
