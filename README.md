@@ -8,8 +8,7 @@ I'm an enthusiast for all things data, a tinkerer in engineering, a connoisseur 
 
 🎓 Pursuing my Master of Applied Data Science at the **University of Southern California**, with a targeted graduation year of 2025. I'm delving deep into courses that sharpen my skills in Machine Learning and Data Management.
 
-🎓 Alumnus of the **University of Liverpool** with a Bachelor's in Computer Science. I've navigated through courses like Multi-Agent Systems, Computational Game Theory, and Data Mining & Visualization.
-
+🎓 Alumnus of the **University of Liverpool** with a Bachelor's in Computer Science track in Artificial Intelligence & **Xi'an Jiaotong–Liverpool University** with a Bachelor's in Information and Computing Science.
 ### Technical Toolkit
 
 - **Programming Languages**: Proficient in C++, C#, Java, Python, SQL, R, HTML5, CSS
