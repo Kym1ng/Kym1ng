@@ -34,17 +34,15 @@ Handled database management using EC2 with real-time database interfacing.
 💻 **Deep Learning for Commodity Price Prediction**  
 Investigated and evaluated a spectrum of machine learning models including Support Vector Regression, Long Short-term Memory, and multi-channel CNNs + LSTM. Pioneered feature generation and selection techniques enhancing predictive accuracy.
 
-💻 **CNN-Based Brain Tumor Detector**  
+💻 **CNN-Based Brain Tumor MRI Segmentation**  
 Awarded Best Computer Vision Project for a U-net model that achieved a dice score of 0.95. Standardized and augmented Brain MRI images for a more effective image segmentation network.
 
 💻 **Word Representation in the Biomedical Domain**  
 Processed and analyzed a 50GB+ dataset of COVID-19-related articles using Word2Vec to construct embeddings. Demonstrated the power of data visualization in representing semantic and syntactic word relationships.
 
-💻 **Trading Strategies Implementation by R**: Developed and optimized Mean-reversion (Overbought/Oversold based on Bollinger Band) and Momentum trading strategies(triple moving average) in R, demonstrating a comprehensive understanding of market dynamics and algorithmic trading.
+💻 **Trading Strategies Implementation**: Developed and optimized Mean-reversion (Overbought/Oversold based on Bollinger Band) and Momentum trading strategies(triple moving average) in R and python, demonstrating a comprehensive understanding of market dynamics and algorithmic trading.
 
-💻 **Adversarial Attack with Deep Learning Model**: Implemented various attack algorithms like FGSM and PGD on deep learning models, focusing on enhancing model robustness for the Fashion MNIST dataset against adversarial examples.
-
-💻 **Group Game Project based on Unity 3D**: Collaborated on a 3D game development project, employing C# for gameplay scripting and handling game object components within the Unity framework.
+💻 **Unity 3D Game**: Collaborated on a 3D game development project, employing C# for gameplay scripting and handling game object components within the Unity framework.
 
 
 ### Get in Touch
