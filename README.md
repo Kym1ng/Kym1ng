@@ -70,8 +70,8 @@ Jun 2023 – Sep 2023
 
 I'm always excited to collaborate on innovative projects and discuss insights in data science, machine learning, and software development. Feel free to reach out:
 
-- Email: [ghm999666@gmail.com](mailto:ghm999666@gmail.com) | [info@zhitongguigu.com](mailto:info@zhitongguigu.com)
-- Connect on [LinkedIn](https://www.linkedin.com/in/yourprofile)
+- Email: [ghm999666@gmail.com](mailto:ghm999666@gmail.com) 
+- Connect on [LinkedIn](https://www.linkedin.com/in/kimi-haoming/)
 - Explore more on [GitHub](https://github.com/Kym1ng)
 
 **Love & Peace,  
