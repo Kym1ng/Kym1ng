@@ -2,7 +2,7 @@
 
 ## I'm Haoming Guo, aka Kimi
 
-Welcome to my GitHub! I'm a data enthusiast, engineering tinkerer, and lifelong learner who combines machine learning, software development, and data management to create innovative solutions.
+Welcome to my GitHub! I'm a data enthusiast and engineering tinkerer with a passion for advancing machine learning, software engineering, and data management. My work spans from pioneering neuroimaging research to building distributed e-commerce systems and developing cutting-edge recommendation engines – all aimed at driving innovation and efficiency. 
 
 ---
 
@@ -27,21 +27,25 @@ Welcome to my GitHub! I'm a data enthusiast, engineering tinkerer, and lifelong 
 💻 **Research Assistant**  
 *USC INI (Mark and Mary Stevens Neuroimaging and Informatics Institute)*  
 Feb 2024 – Jan 2025  
-- Developed a DCN-GAN in PyTorch to generate cortex thickness meshes for data augmentation and the Mesh Diffusion model.
-- Integrated ResNet blocks and attention layers to enhance feature extraction.
-- Improved GAN stability using weight clipping for WGAN and implementing gradient penalty loss for WGANGP, optimized via YAML-based configuration control with Omegaconf.
+- Developed a DCN-GAN in PyTorch to generate cortex thickness meshes for data augmentation and Mesh Diffusion modeling, enhancing dataset diversity and training robustness.
+- Designed and implemented the model with ResNet blocks and attention layers to improve depth and feature extraction—reducing the FID score by 41.52% for mesh generation.
+- Optimized the model on GPU clusters using YAML-based configuration control with Omegaconf and implemented mesh visualization with SciPy for enhanced interpretability.
+- Improved GAN stability by applying weight clipping for WGAN and gradient penalty loss (WGANGP), achieving balanced discriminator-generator convergence.
 
 💻 **Software Engineering Intern**  
-*NextTier*  
-Jun 2024 – Sep 2024  
-- Designed and implemented a distributed e-commerce database system using MongoDB, reducing query latency by 50% through effective sharding and hash key design.
-- Developed backend CRUD operations with Tkinter and PyMongo, and created a desktop query interface using Streamlit.
-- Enabled real-time data interaction via cURL with Firebase on AWS EC2, ensuring efficient data storage and retrieval.
+*Eth Tech*  
+Nov 2023 – Jan 2024  
+- Implemented a distributed e-commerce database system using MongoDB with the Amazon Fashion Products dataset, developing backend CRUD operations with Tkinter and PyMongo.
+- Created a Streamlit-based desktop query interface to enhance user experience.
+- Optimized data distribution by designing an effective hash key for MongoDB sharding, reducing query latency by 50% and bolstering data reliability through distributed backup strategies.
+- Built a lightweight real-time database on AWS EC2, leveraging cURL with the REST API for efficient data storage and retrieval.
+- Visualized transaction data using D3.js, Vue, and Deck.gl, creating interactive map-based dashboards to reveal spatial distribution and transaction patterns.
 
 💻 **Machine Learning Engineer Intern**  
 *Tencent Holdings Ltd.*  
-Jun 2023 – Sep 2023  
-- Built a hybrid recommendation system using Yelp rating data, processing large-scale datasets with Spark RDD.
+Aug 2023 – Oct 2023  
+- Developed a hybrid recommendation system for personalized user recommendations using Yelp rating data.
+- Processed large-scale data with Spark RDD, optimizing feature extraction and transformation for efficiency.
 - Enhanced item-based collaborative filtering by integrating an XGBoost model, achieving 95.1% accuracy—a 6% performance boost over the baseline.
 
 ---
@@ -49,28 +53,28 @@ Jun 2023 – Sep 2023
 ### Selected Projects
 
 💻 **CNN-Based Brain Tumor Segmentation**  
-- Implemented a U-Net CNN model for Brain MRI image segmentation, achieving a dice score of 0.95.
-- Conducted extensive hyperparameter tuning and architectural optimizations, earning recognition as the Best Computer Vision Project at the Imperial College London Data Science Summer Camp 2022.
+- Implemented a U-Net CNN model for brain MRI segmentation, conducting extensive hyperparameter tuning and architectural optimization to achieve a dice score of 0.95.
+- Earned the Best Computer Vision Project award at Imperial College London's Data Science Summer Camp 2022.
 
 💻 **Object Detection with DETR on KITTI Dataset**  
-- Developed a custom PyTorch dataset class for the KITTI dataset and fine-tuned a pre-trained DETR model.
-- Applied custom data augmentations and hyperparameter optimizations to improve object detection accuracy and performance.
+- Developed a PyTorch dataset class for KITTI and built an API by transforming labels to a COCO-like format.
+- Fine-tuned a pre-trained DETR model by customizing its classification layer and conducting extensive hyperparameter optimization, resulting in a 12% increase in detection performance as measured by average AP.
 
 ---
 
 ### Technical Skills
 
 - **Machine Learning & Deep Learning**: PyTorch, TensorFlow; image segmentation, object detection, object tracking, generative models, word embeddings, GPU cluster acceleration  
-- **Data Management & Visualization**: MongoDB, MapReduce, distributed file systems; D3.js, Google Charts, Matplotlib, ggplot2  
-- **Frontend & Tools**: React.js, Streamlit, HTML5, CSS, Python, Java, C++, C#, SQL, R
+- **Data Management & Visualization**: MongoDB, MapReduce, distributed file systems; data mining, D3.js, Google Charts, Matplotlib, ggplot2  
+- **Frontend & Tools**: React.js, Vue, Streamlit, D3.js; proficient in Python, Java, C++, C#, SQL, R
 
 ---
 
 ### Get in Touch
 
-I'm always excited to collaborate on innovative projects and discuss insights in data science, machine learning, and software development. Feel free to reach out:
+I’m always excited to collaborate on innovative projects and explore advances in data science, machine learning, and software engineering. Feel free to reach out:
 
-- Email: [ghm999666@gmail.com](mailto:ghm999666@gmail.com) 
+- Email: [kimigj999666@gmail.com](mailto:kimigj999666@gmail.com)
 - Connect on [LinkedIn](https://www.linkedin.com/in/kimi-haoming/)
 - Explore more on [GitHub](https://github.com/Kym1ng)
 
