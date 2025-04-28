@@ -1,15 +1,15 @@
-# Hi there 👋
+# Greeting 👋
 
-## I'm Haoming Guo, aka Kimi
+## I'm Haoming Guo, aka Kimi G
 
-Welcome to my GitHub! I'm a data enthusiast and engineering tinkerer with a passion for advancing machine learning, software engineering, and data management. My work spans from pioneering neuroimaging research to building distributed e-commerce systems and developing cutting-edge recommendation engines – all aimed at driving innovation and efficiency. 
+Discipline is freedom. True independence comes from mastering yourself, not being a slave to momentary desires.
 
 ---
 
 ### Education
 
 - **MS, Applied Data Science**  
-  *University of Southern California* (GPA: 3.8/4.0)  
+  *University of Southern California* (GPA: 3.85/4.0)  
   Aug 2023 – Dec 2025
 
 - **BS, Computer Science** (First Class, GPA: 3.7/4.0)  
@@ -31,6 +31,7 @@ Feb 2024 – Jan 2025
 - Designed and implemented the model with ResNet blocks and attention layers to improve depth and feature extraction, reducing FID score 41.52% mesh generation.
 - Optimized and fine-tuned the model on GPU clusters using YAML-based configuration control with Omegaconf and implemented mesh visualization using SciPy for enhanced interpretability.
 - Improved GAN stability by applying weight clipping for WGAN and gradient penalty loss (WGANGP), achieving balanced discriminator-generator convergence.
+
 💻 **Software Engineering Intern**  
 *Eth Tech*  
 Nov 2023 – Jan 2024  
