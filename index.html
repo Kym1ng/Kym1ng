@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haoming Guo - Applied Data Scientist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Apply Inter font globally */
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Style for bullet points in experience */
+        .experience-details ul {
+            list-style-type: disc;
+            padding-left: 1.25rem; /* Equivalent to pl-5 in Tailwind */
+            margin-top: 0.5rem; /* Equivalent to mt-2 */
+        }
+        .experience-details li {
+            margin-bottom: 0.25rem; /* Equivalent to mb-1 */
+        }
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+        /* Add padding to target sections to offset sticky nav height */
+        section[id] {
+          scroll-margin-top: 5rem; /* Adjust this value based on nav height */
+        }
+        /* Form input styles removed as the form is deleted */
+    </style>
+</head>
+<body class="bg-black text-gray-300 min-h-screen">
+
+    <div class="container mx-auto max-w-6xl bg-black rounded-lg p-4 md:p-8">
+
+        <nav class="sticky top-0 z-50 mb-8 bg-gray-800 bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg p-4 flex justify-between items-center">
+            <div class="space-x-4 md:space-x-6 text-sm md:text-base">
+                <a href="#summary" class="text-gray-300 hover:text-white transition duration-200">Profile</a>
+                <a href="#experience" class="text-gray-300 hover:text-white transition duration-200">Experience</a>
+                <a href="#skills" class="text-gray-300 hover:text-white transition duration-200">Skills</a>
+                <a href="#projects" class="text-gray-300 hover:text-white transition duration-200">Projects</a>
+                <a href="#contact-info" class="text-gray-300 hover:text-white transition duration-200">Contact</a>
+                </div>
+            <div>
+                <a href="mailto:kimigj999666@gmail.com" class="bg-gray-700 hover:bg-gray-600 text-white text-sm py-2 px-4 rounded-lg transition duration-200 border border-gray-600">
+                    Send Mail
+                </a>
+            </div>
+        </nav>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pt-4">
+
+            <div class="md:col-span-1 space-y-8">
+                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg text-center">
+                     <div class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full mb-4 overflow-hidden">
+                        <img src="self1.jpg" alt="Haoming Guo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/160x160/6B7280/FFFFFF?text=Photo';">
+                     </div>
+                </div>
+
+                <section id="education" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Education</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <p class="font-medium text-white">University of Southern California</p>
+                            <p class="text-sm text-gray-400">MS, Applied Data Science (GPA: 3.8)</p>
+                            <p class="text-xs text-gray-500">Aug 2023 - Dec 2025 (Expected)</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-white">University of Liverpool</p>
+                            <p class="text-sm text-gray-400">BS, Computer Science (First Class GPA: 3.7)</p>
+                            <p class="text-xs text-gray-500">Sept 2019 - Jun 2023</p>
+                        </div>
+                         <div>
+                            <p class="font-medium text-white">Xi'an Jiaotong-Liverpool University</p>
+                            <p class="text-sm text-gray-400">BS, Information and Computing Science (GPA: 3.7)</p>
+                            <p class="text-xs text-gray-500">Sept 2019 - Jun 2023</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact-info" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Contact Info</h2>
+                    <div class="space-y-3">
+                        <div>
+                            <p class="font-medium text-white">Phone</p>
+                            <p class="text-sm text-gray-400">(818) 961-1075</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-white">Email</p>
+                            <p class="text-sm text-gray-400 break-words">kimigj999666@gmail.com</p>
+                        </div>
+                        <div>
+                            <p class="font-medium text-white">Location</p>
+                            <p class="text-sm text-gray-400">Los Angeles, CA 90015</p>
+                        </div>
+                        <div class="flex items-center space-x-4 mt-3"> 
+                            <a href="https://www.linkedin.com/in/kimi-haoming/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-200" aria-label="LinkedIn Profile">
+                                <i class="fab fa-linkedin-in fa-2x"></i> 
+                            </a>
+                            <a href="https://github.com/Kym1ng" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-200" aria-label="GitHub Profile">
+                                <i class="fab fa-github fa-2x"></i> 
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div> <div class="md:col-span-3 space-y-8">
+                <header class="mb-6 md:mb-0" id="header">
+                    <h1 class="text-4xl md:text-5xl font-bold text-white">Haoming Guo</h1>
+                    <p class="text-lg text-gray-400 mt-1">Applied Data Scientist | Machine Learning Engineer</p>
+                </header>
+
+                <section id="summary" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Professional Profile</h2>
+                    <p class="text-gray-300">
+                    Driven Applied Data Science master's student specializing in <strong>Machine Learning Engineering</strong>. I have hands-on experience designing, implementing, and optimizing a diverse range of machine learning models – including <strong>DETR Transformers</strong> for <strong>Computer Vision</strong> tasks like <strong>object detection</strong>, <strong>Generative Models</strong> for cortex thickness image (<strong>GANs</strong>), <strong>Recommendation Systems</strong> for user rating prediction – primarily utilizing <strong>PyTorch</strong>. My focus is on developing robust and effective ML solutions from concept through implementation. To support these projects, I also possess <strong>full-stack</strong> capabilities, enabling me to build front-end data visualizations (<strong>React</strong>, <strong>D3.js</strong>) and manage backend systems (<strong>MongoDB</strong>). I am actively seeking a challenging <strong>Machine Learning Engineer</strong> role where I can apply my expertise to build impactful <strong>AI-driven</strong> products.
+                    </p>
+                </section>
+
+                <section id="experience" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Working Experience</h2>
+                    <div class="space-y-6">
+                        <div class="flex space-x-3">
+                             <div class="w-10 h-10 bg-gray-600 rounded flex items-center justify-center text-xs text-white mt-1 flex-shrink-0">INI</div>
+                            <div class="experience-details flex-1">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
+                                     <h3 class="text-lg font-medium text-white">Research Assistant</h3>
+                                     <span class="text-xs text-gray-500 mt-1 sm:mt-0">Feb 2024 - Jan 2025</span>
+                                </div>
+                                <p class="text-sm font-medium text-gray-400 mb-1">USC INI (Mark and Mary Stevens Neuroimaging and Informatics Institute)</p>
+                                <ul class="text-sm text-gray-300">
+                                    <li>Developed a DCN-GAN in PyTorch for cortex thickness mesh generation, enhancing data augmentation.</li>
+                                    <li>Designed model with ResNet blocks and attention layers, reducing FID score by 41.52%.</li>
+                                    <li>Optimized model on GPU clusters using Omegaconf and implemented SciPy mesh visualization.</li>
+                                    <li>Improved GAN stability using WGAN and WGANGP techniques.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex space-x-3">
+                             <div class="w-10 h-10 bg-gray-600 rounded flex items-center justify-center text-xs text-white mt-1 flex-shrink-0">Eth</div>
+                            <div class="experience-details flex-1">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
+                                     <h3 class="text-lg font-medium text-white">Software Engineering Intern</h3>
+                                     <span class="text-xs text-gray-500 mt-1 sm:mt-0">Nov 2023 - Jan 2024</span>
+                                </div>
+                                <p class="text-sm font-medium text-gray-400 mb-1">Eth Tech</p>
+                                <ul class="text-sm text-gray-300">
+                                    <li>Implemented distributed e-commerce MongoDB system and backend CRUD operations with Tkinter/PyMongo.</li>
+                                    <li>Developed a Streamlit-based query interface.</li>
+                                    <li>Designed MongoDB sharding key, reducing query latency by 50%.</li>
+                                    <li>Built a real-time DB on AWS EC2 using REST API/cURL.</li>
+                                    <li>Visualized transaction data using D3.js, Vue, and Deck.gl.</li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="flex space-x-3">
+                             <div class="w-10 h-10 bg-gray-600 rounded flex items-center justify-center text-xs text-white mt-1 flex-shrink-0">Yisen</div>
+                            <div class="experience-details flex-1">
+                                <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
+                                     <h3 class="text-lg font-medium text-white">Machine Learning Engineer Intern</h3>
+                                     <span class="text-xs text-gray-500 mt-1 sm:mt-0">Aug 2023 - Oct 2023</span>
+                                </div>
+                                <p class="text-sm font-medium text-gray-400 mb-1">Yisen Tech</p>
+                                <ul class="text-sm text-gray-300">
+                                    <li>Developed a hybrid recommendation system using Yelp data.</li>
+                                    <li>Processed large-scale data using Spark RDD.</li>
+                                    <li>Improved collaborative filtering with an XGBoost model, achieving 95.1% accuracy (6% boost).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="skills" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Skills</h2>
+                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                        <div>
+                            <h3 class="font-semibold text-white mb-2">Machine Learning</h3>
+                            <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
+                                <li>Object Detection/Tracking</li>
+                                <li>Generative Models (GANs)</li>
+                                <li>Recommendation Systems</li>
+                                <li>RAG with MCP</li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h3 class="font-semibold text-white mb-2">Data Management & Viz</h3>
+                            <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
+                                <li>Distributed Systems (MongoDB, MapReduce,Spark)</li>
+                                <li>Visualization (D3.js, Google Charts, Deck.gl)</li>
+                            </ul>
+                        </div>
+                         <div>
+                            <h3 class="font-semibold text-white mb-2">Frontend & Other</h3>
+                            <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
+                                <li>React.js, Vue</li>
+                                <li>Streamlit</li>
+                                <li>Docker & Git</li>
+                            </ul>
+                        </div>
+                    </div>
+                 </section>
+
+                 <section id="projects" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
+                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Selected Projects</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="font-medium text-white">CNN-Based Brain Tumor Segmentation</h3>
+                            <p class="text-sm text-gray-400">Implemented U-Net CNN, achieved 0.95 dice score. Won Best CV Project Award (Imperial College DSSC 2022).</p>
+                            <p class="text-xs text-gray-500">June 2022 - July 2022</p>
+                        </div>
+                         <div>
+                            <h3 class="font-medium text-white">Object Detection with DETR on KITTI</h3>
+                            <p class="text-sm text-gray-400">Implemented PyTorch dataset/API for KITTI, fine-tuned DETR, increased AP by 12%.</p>
+                             <p class="text-xs text-gray-500">Jan 2024 - Present</p>
+                        </div>
+                        <div class="pt-2">
+                             <a href="projects.html" class="text-sm text-blue-400 hover:text-blue-300">View All Projects &rarr;</a>
+                        </div>
+                    </div>
+                </section>
+
+                </div> </div> <footer class="text-center mt-12 py-4 border-t border-gray-700">
+            <p class="text-sm text-gray-500">&copy; 2025 Haoming Guo</p>
+        </footer>
+
+    </div> </body>
+</html>
