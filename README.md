@@ -1,4 +1,4 @@
-# Greeting 👋
+# Greeting 👋 Check My [portfolio website](https://kym1ng.github.io/Kym1ng/index.html)
 
 ## I'm Haoming Guo, aka Kimi G
 
