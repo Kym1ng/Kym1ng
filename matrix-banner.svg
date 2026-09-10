@@ -1,0 +1,675 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 220" width="1200" height="220" role="img" aria-label="Haoming Guo">
+  <defs>
+    <clipPath id="frame"><rect x="0" y="0" width="1200" height="220" rx="10"/></clipPath>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="vign" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#000000" stop-opacity="0.15"/>
+      <stop offset="55%" stop-color="#000000" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35"/>
+    </linearGradient>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect x="0" y="0" width="1200" height="220" fill="#050806"/>
+
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="11.0,-234; 11.0,346" dur="3.51s" begin="-5.09s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">6</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">9</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ペ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ア</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ツ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ム</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">7</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ブ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ケ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="33.0,-383; 33.0,197" dur="2.7s" begin="-3.4s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ゴ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ァ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ボ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ヌ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">7</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">マ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ゥ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ゲ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ユ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="55.0,-253; 55.0,327" dur="4.36s" begin="-0.31s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ム</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ト</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">6</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ゲ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">5</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ポ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ェ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">セ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ニ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="77.0,-322; 77.0,258" dur="3.0s" begin="-5.29s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ポ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヾ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ロ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">キ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ィ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ム</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ミ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ョ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ギ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="99.0,-384; 99.0,196" dur="3.64s" begin="-2.71s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">マ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">7</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ュ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">グ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">フ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ロ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ペ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヌ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヹ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="121.0,-284; 121.0,296" dur="3.48s" begin="-2.49s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ツ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ゼ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">サ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">・</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">キ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ワ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヹ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">サ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">゠</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="143.0,-313; 143.0,267" dur="4.21s" begin="-2.85s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ン</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ハ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ズ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ャ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">9</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ゥ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">プ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ニ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">カ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="165.0,-275; 165.0,305" dur="4.72s" begin="-5.09s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ニ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">5</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ル</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">9</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヷ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ポ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ミ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">・</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヾ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="187.0,-248; 187.0,332" dur="3.48s" begin="-1.83s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">フ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ム</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ー</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">バ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">8</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ァ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ジ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヒ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ワ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="209.0,-221; 209.0,359" dur="4.46s" begin="-5.64s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ソ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヨ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ミ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ロ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ハ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ズ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヱ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">デ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ル</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="231.0,-310; 231.0,270" dur="3.57s" begin="-0.36s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">カ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヤ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">イ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">フ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">7</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ケ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヸ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ズ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ウ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="253.0,-273; 253.0,307" dur="4.67s" begin="-3.61s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">゠</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">カ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ハ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ド</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ボ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ス</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ェ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヾ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ネ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="275.0,-294; 275.0,286" dur="5.02s" begin="-4.33s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ッ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ロ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">テ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">コ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ォ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">゠</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ガ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ォ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">コ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="297.0,-188; 297.0,392" dur="4.44s" begin="-5.93s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">メ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">キ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">シ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ズ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">0</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">エ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ニ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ペ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヅ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="319.0,-368; 319.0,212" dur="4.31s" begin="-4.09s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヮ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">プ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ュ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ラ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">レ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヴ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">6</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">バ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヹ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="341.0,-257; 341.0,323" dur="5.27s" begin="-1.92s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ト</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ト</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ド</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ト</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ィ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ビ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ョ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ド</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">7</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="363.0,-288; 363.0,292" dur="3.13s" begin="-0.09s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">オ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">イ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">チ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">モ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">6</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ィ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">0</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">マ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ォ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="385.0,-243; 385.0,337" dur="4.1s" begin="-0.31s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">3</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">9</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">グ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ヤ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">テ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ォ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ョ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ザ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヂ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="407.0,-371; 407.0,209" dur="4.29s" begin="-3.16s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ピ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">パ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ビ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ビ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ソ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">゠</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">エ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ィ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヵ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="429.0,-188; 429.0,392" dur="3.56s" begin="-4.41s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヮ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">オ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ヘ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">2</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">グ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ベ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ツ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">エ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヮ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="451.0,-265; 451.0,315" dur="4.12s" begin="-5.84s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ゼ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヨ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ァ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ワ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">シ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヘ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ツ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">カ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ッ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="473.0,-201; 473.0,379" dur="4.76s" begin="-2.8s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ブ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ダ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ョ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ゲ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヤ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヽ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヺ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヷ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ギ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="495.0,-211; 495.0,369" dur="4.86s" begin="-1.09s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ー</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">コ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ク</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ヘ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">フ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ッ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ン</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">3</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">3</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="517.0,-351; 517.0,229" dur="4.81s" begin="-3.17s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヮ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ャ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ヂ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ハ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヽ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヲ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヂ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ツ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">゠</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="539.0,-350; 539.0,230" dur="3.22s" begin="-4.64s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">チ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">グ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ビ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ュ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヤ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">0</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ビ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ラ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヂ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="561.0,-231; 561.0,349" dur="4.84s" begin="-5.49s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ゥ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">デ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ヺ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ヱ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヶ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ク</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ビ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ガ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ネ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="583.0,-195; 583.0,385" dur="4.81s" begin="-4.0s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヲ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ト</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">パ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ド</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヵ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">゠</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヲ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">オ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">カ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="605.0,-249; 605.0,331" dur="5.38s" begin="-5.83s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">パ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヽ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ラ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">エ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヤ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">モ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヒ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">リ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヂ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="627.0,-395; 627.0,185" dur="3.04s" begin="-2.71s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">1</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ー</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ヲ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ラ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ィ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ベ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヵ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ェ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ネ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="649.0,-346; 649.0,234" dur="5.36s" begin="-4.83s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">3</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ザ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ケ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">セ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ブ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ゴ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヷ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">メ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">タ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="671.0,-367; 671.0,213" dur="3.33s" begin="-3.49s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">7</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヴ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ッ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">バ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">リ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ム</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヾ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヘ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ニ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="693.0,-367; 693.0,213" dur="4.92s" begin="-0.73s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ペ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ォ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ベ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">プ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">2</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ノ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヹ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">キ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ャ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="715.0,-356; 715.0,224" dur="2.61s" begin="-1.2s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">エ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヒ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ュ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ヲ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ゥ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ポ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">7</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">タ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ロ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="737.0,-200; 737.0,380" dur="4.05s" begin="-2.67s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヹ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ィ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ポ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">7</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">サ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ギ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ス</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">5</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヸ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="759.0,-393; 759.0,187" dur="2.87s" begin="-3.29s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヷ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">8</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ノ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">タ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヤ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ブ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ャ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">プ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ク</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="781.0,-264; 781.0,316" dur="4.54s" begin="-3.29s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヽ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ビ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ブ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">サ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ワ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヘ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">シ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ポ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ク</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="803.0,-369; 803.0,211" dur="4.95s" begin="-5.18s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ト</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ノ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ゾ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">9</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ル</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ゴ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヌ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">9</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ケ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="825.0,-202; 825.0,378" dur="4.47s" begin="-1.3s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ォ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヱ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ヨ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">リ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ツ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">エ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ザ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ェ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">パ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="847.0,-299; 847.0,281" dur="3.21s" begin="-0.28s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ピ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">オ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ル</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ゲ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">オ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヰ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ネ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">プ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ド</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="869.0,-319; 869.0,261" dur="3.55s" begin="-4.83s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ァ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヲ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ツ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">2</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">チ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ボ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">バ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ノ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヰ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="891.0,-241; 891.0,339" dur="2.65s" begin="-4.01s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">セ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">プ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">8</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">イ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヺ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">コ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ィ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">゠</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">シ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="913.0,-354; 913.0,226" dur="3.36s" begin="-0.56s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ジ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヶ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ウ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ヾ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ヌ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">レ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ヾ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">シ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ド</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="935.0,-254; 935.0,326" dur="3.02s" begin="-0.48s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">フ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ワ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">タ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ァ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ス</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">7</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ー</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヮ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">キ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="957.0,-396; 957.0,184" dur="3.79s" begin="-5.57s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ョ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ァ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ー</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">シ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">゠</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ャ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ゲ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">8</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">シ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="979.0,-314; 979.0,266" dur="5.02s" begin="-3.28s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ボ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ニ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ジ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ュ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ウ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">5</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ベ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヰ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ゴ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1001.0,-333; 1001.0,247" dur="5.23s" begin="-0.18s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">6</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">キ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ク</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ソ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ユ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ソ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ベ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヷ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">グ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1023.0,-355; 1023.0,225" dur="3.41s" begin="-3.0s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ジ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヂ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ー</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">2</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ザ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">4</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">1</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">2</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ン</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1045.0,-269; 1045.0,311" dur="4.02s" begin="-0.13s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ヒ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">サ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ハ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ィ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">リ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヾ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ラ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ネ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">リ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1067.0,-300; 1067.0,280" dur="3.99s" begin="-0.99s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ブ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ソ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ヮ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ケ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">コ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">チ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ク</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ヰ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ン</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1089.0,-312; 1089.0,268" dur="4.38s" begin="-3.57s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">6</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ウ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">1</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">9</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ユ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヴ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ザ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ネ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">オ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1111.0,-303; 1111.0,277" dur="2.76s" begin="-2.01s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">ブ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ル</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ズ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">モ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">サ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ヮ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">セ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">5</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">バ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1133.0,-400; 1133.0,180" dur="3.12s" begin="-4.39s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">シ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ツ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ダ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ボ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">タ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">サ</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">4</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ソ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ケ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1155.0,-303; 1155.0,277" dur="3.6s" begin="-5.99s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">゠</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ヒ</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">ス</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">ブ</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ラ</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">ク</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">サ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ブ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ヹ</text>
+    </g>
+    <g font-family="'Courier New', ui-monospace, monospace" font-size="20" text-anchor="middle">
+      <animateTransform attributeName="transform" type="translate" values="1177.0,-378; 1177.0,202" dur="2.61s" begin="-4.41s" repeatCount="indefinite"/>
+      <text x="0" y="0" fill="#CFFFE0" fill-opacity="1.00">エ</text>
+      <text x="0" y="20" fill="#00FF66" fill-opacity="0.95">ド</text>
+      <text x="0" y="40" fill="#00FF66" fill-opacity="0.88">メ</text>
+      <text x="0" y="60" fill="#00FF66" fill-opacity="0.79">5</text>
+      <text x="0" y="80" fill="#00FF66" fill-opacity="0.68">ト</text>
+      <text x="0" y="100" fill="#00FF66" fill-opacity="0.56">2</text>
+      <text x="0" y="120" fill="#00FF66" fill-opacity="0.43">ゼ</text>
+      <text x="0" y="140" fill="#00FF66" fill-opacity="0.30">ゼ</text>
+      <text x="0" y="160" fill="#00FF66" fill-opacity="0.15">ユ</text>
+    </g>
+    <rect x="0" y="0" width="1200" height="220" fill="url(#vign)"/>
+    <rect x="0" y="64.0" width="1200" height="92" fill="#000000" fill-opacity="0.42"/>
+    <text x="600.0" y="104.0" text-anchor="middle" font-family="'Courier New', ui-monospace, monospace" font-weight="700"
+          font-size="46" letter-spacing="6" fill="#00FF66" filter="url(#glow)">HAOMING GUO</text>
+    <text x="600.0" y="140.0" text-anchor="middle" font-family="'Courier New', ui-monospace, monospace"
+          font-size="16" letter-spacing="3" fill="#7CFFB2" fill-opacity="0.85">APPLIED DATA SCIENTIST // MACHINE LEARNING ENGINEER</text>
+  </g>
+</svg>
