@@ -1,246 +1,537 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haoming Guo - Applied Data Scientist</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        /* Apply Inter font globally */
-        body {
-            font-family: 'Inter', sans-serif;
-        }
-        /* Style for bullet points in experience */
-        .experience-details ul {
-            list-style-type: disc;
-            padding-left: 1.25rem; /* Equivalent to pl-5 in Tailwind */
-            margin-top: 0.5rem; /* Equivalent to mt-2 */
-        }
-        .experience-details li {
-            margin-bottom: 0.25rem; /* Equivalent to mb-1 */
-        }
-        /* Smooth scrolling for anchor links */
-        html {
-            scroll-behavior: smooth;
-        }
-        /* Add padding to target sections to offset sticky nav height */
-        section[id] {
-          scroll-margin-top: 5rem; /* Adjust this value based on nav height */
-        }
-        /* Form input styles removed as the form is deleted */
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B0E14">
+<meta name="description" content="Haoming Guo — Applied Data Scientist &amp; Machine Learning Engineer. Computer vision, generative models, and retrieval-augmented systems, from fine-tuning DETR on KITTI to a full RAG chatbot.">
+<meta property="og:title" content="Haoming Guo — Applied Data Scientist">
+<meta property="og:description" content="Computer vision, generative models, and retrieval-augmented systems — projects and experience.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230B0E14'/%3E%3Ctext x='50' y='64' font-size='42' font-family='Georgia,serif' fill='%236C8CFF' text-anchor='middle'%3EHG%3C/text%3E%3C/svg%3E">
+<title>Haoming Guo — Applied Data Scientist</title>
+<style>
+  :root {
+    --bg: #0B0E14;
+    --surface: #10141C;
+    --surface2: #161B26;
+    --ink: #EDEFF5;
+    --muted: #9AA1B2;
+    --line: #232838;
+    --accent: #6C8CFF;
+    --accent-soft: rgba(108, 140, 255, 0.14);
+    --accent2: #E8A94C;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+    overflow-x: hidden;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    * { animation: none !important; transition: none !important; }
+  }
+  ::selection { background: var(--accent-soft); color: var(--ink); }
+  a { color: inherit; }
+  img { max-width: 100%; display: block; }
+
+  /* ---------- progress bar ---------- */
+  .progress { position: fixed; top: 0; left: 0; height: 3px; width: 100%; background: var(--line); z-index: 60; }
+  .progress .fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent2)); }
+
+  /* ---------- top bar ---------- */
+  .topbar {
+    position: fixed; top: 3px; left: 0; right: 0; z-index: 58;
+    display: flex; justify-content: space-between; align-items: center;
+    padding: .9rem 1.5rem; background: rgba(11,14,20,0.72); backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--line);
+  }
+  .topbar .name { font-size: .88rem; font-weight: 700; letter-spacing: -0.01em; }
+  .topbar a.cta {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .74rem; letter-spacing: .04em; color: var(--ink); text-decoration: none;
+    border: 1px solid var(--line); padding: .5rem .9rem; border-radius: 999px;
+    transition: border-color .2s ease, color .2s ease;
+  }
+  .topbar a.cta:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- side nav ---------- */
+  .dotnav { position: fixed; right: 1.6rem; top: 50%; transform: translateY(-50%); z-index: 55; display: flex; flex-direction: column; gap: 1.1rem; }
+  @media (max-width: 820px) { .dotnav { display: none; } }
+  .dotnav button {
+    width: 10px; height: 10px; border-radius: 50%; border: 1px solid var(--line);
+    background: transparent; padding: 0; cursor: pointer; position: relative;
+    transition: background .2s ease, border-color .2s ease, transform .2s ease;
+  }
+  .dotnav button.active { background: var(--accent); border-color: var(--accent); transform: scale(1.25); }
+  .dotnav button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  .dotnav button .lbl {
+    position: absolute; right: 22px; top: 50%; transform: translateY(-50%);
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .68rem; letter-spacing: .08em; text-transform: uppercase;
+    color: var(--muted); white-space: nowrap; opacity: 0; pointer-events: none; transition: opacity .15s ease;
+  }
+  .dotnav button:hover .lbl { opacity: 1; }
+
+  section { padding: 7rem 1.75rem; position: relative; }
+  .wrap { max-width: 920px; margin: 0 auto; }
+  .eyebrow {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .74rem; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin: 0 0 1rem;
+  }
+  h2.section-title { font-size: clamp(1.6rem, 3.4vw, 2.1rem); margin: 0 0 2.5rem; letter-spacing: -0.01em; text-wrap: balance; }
+
+  /* ---------- reveal primitives ---------- */
+  .reveal { opacity: 0; transform: translateY(22px); transition: opacity .7s cubic-bezier(.2,.7,.2,1), transform .7s cubic-bezier(.2,.7,.2,1); transition-delay: calc(var(--i, 0) * 70ms); }
+  .reveal.is-in { opacity: 1; transform: translateY(0); }
+  .reveal-side { opacity: 0; transform: translateX(var(--dx, -26px)); transition: opacity .7s ease, transform .7s ease; }
+  .reveal-side.is-in { opacity: 1; transform: translateX(0); }
+  .reveal-scale { opacity: 0; transform: scale(.96) translateY(16px); transition: opacity .6s ease, transform .6s ease; transition-delay: calc(var(--i, 0) * 110ms); }
+  .reveal-scale.is-in { opacity: 1; transform: scale(1) translateY(0); }
+
+  /* ---------- hero ---------- */
+  .hero { min-height: 94vh; display: flex; flex-direction: column; justify-content: center; padding-top: 6rem; }
+  .hero .blob { position: absolute; inset: -20% -10% auto -10%; height: 70%; background: radial-gradient(closest-side, var(--accent-soft), transparent 70%); filter: blur(10px); animation: drift 14s ease-in-out infinite alternate; z-index: 0; pointer-events: none; }
+  @keyframes drift { from { transform: translate(-2%, -2%) scale(1); } to { transform: translate(3%, 4%) scale(1.06); } }
+  .hero-inner { display: flex; align-items: center; gap: 2.5rem; position: relative; z-index: 1; }
+  @media (max-width: 700px) { .hero-inner { flex-direction: column-reverse; align-items: flex-start; gap: 1.75rem; } }
+  .hero-photo { flex-shrink: 0; width: 132px; height: 132px; border-radius: 50%; overflow: hidden; border: 1px solid var(--line); background: var(--surface); }
+  .hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+  .hero-line { opacity: 0; transform: translateY(18px); animation: rise .8s cubic-bezier(.2,.7,.2,1) forwards; animation-delay: calc(var(--i, 0) * 140ms); }
+  @keyframes rise { to { opacity: 1; transform: translateY(0); } }
+  .hero-name { margin: 0 0 .6rem; font-size: clamp(2.5rem, 6.6vw, 4rem); font-weight: 800; letter-spacing: -0.02em; line-height: 1; text-wrap: balance; }
+  .hero-role { margin: 0 0 1.2rem; font-size: clamp(1.02rem, 2.2vw, 1.22rem); color: var(--muted); font-weight: 500; }
+  .hero-tag { margin: 0; max-width: 560px; color: var(--muted); line-height: 1.6; font-size: .98rem; }
+  .hero-cue { margin-top: 2.6rem; display: flex; align-items: center; gap: .6rem; color: var(--muted); font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; }
+  .hero-cue .chev { width: 8px; height: 8px; border-right: 1.5px solid var(--muted); border-bottom: 1.5px solid var(--muted); transform: rotate(45deg); animation: bob 1.8s ease-in-out infinite; }
+  @keyframes bob { 0%,100% { transform: rotate(45deg) translate(0,0); } 50% { transform: rotate(45deg) translate(3px,3px); } }
+
+  /* ---------- education ---------- */
+  .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+  @media (max-width: 760px) { .edu-grid { grid-template-columns: 1fr; } }
+  .edu-card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 1.3rem 1.4rem; }
+  .edu-card .when { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .72rem; color: var(--accent); margin-bottom: .6rem; }
+  .edu-card h3 { margin: 0 0 .35rem; font-size: 1.02rem; }
+  .edu-card p { margin: 0; font-size: .86rem; color: var(--muted); line-height: 1.5; }
+
+  /* ---------- skills ---------- */
+  .skill-group { margin-bottom: 2.1rem; }
+  .skill-group:last-child { margin-bottom: 0; }
+  .skill-group h3 { margin: 0 0 .9rem; font-size: .88rem; color: var(--muted); font-weight: 600; }
+  .chips { display: flex; flex-wrap: wrap; gap: .55rem; }
+  .chip { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .8rem; padding: .5rem .85rem; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); }
+
+  /* ---------- experience / rail ---------- */
+  .timeline { position: relative; padding-left: 2.4rem; }
+  .rail-track { position: absolute; left: 6px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
+  .rail-fill { position: absolute; left: 6px; top: 6px; width: 2px; height: 0%; background: linear-gradient(180deg, var(--accent), var(--accent2)); transition: height .1s linear; }
+  .tl-item { position: relative; padding-bottom: 2.8rem; }
+  .tl-item:last-child { padding-bottom: 0; }
+  .tl-dot { position: absolute; left: -2.4rem; top: .3rem; width: 14px; height: 14px; border-radius: 50%; background: var(--bg); border: 2px solid var(--line); transition: border-color .3s ease; }
+  .tl-item.is-in .tl-dot { border-color: var(--accent); }
+  .tl-item .when { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .76rem; color: var(--accent); margin-bottom: .4rem; }
+  .tl-item h3 { margin: 0 0 .2rem; font-size: 1.12rem; }
+  .tl-item .org { margin: 0 0 .7rem; color: var(--muted); font-size: .88rem; }
+  .tl-item ul { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: .9rem; line-height: 1.6; max-width: 620px; }
+  .tl-item li { margin-bottom: .35rem; }
+  .tl-item li:last-child { margin-bottom: 0; }
+
+  /* ---------- projects ---------- */
+  .proj-list { display: flex; flex-direction: column; gap: 1.1rem; }
+  .proj-card { background: var(--surface); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; display: grid; grid-template-columns: 300px 1fr; transition: border-color .25s ease, transform .25s ease, box-shadow .25s ease; }
+  .proj-card:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 22px 46px -28px var(--accent-soft); }
+  @media (max-width: 760px) { .proj-card { grid-template-columns: 1fr; } }
+  .proj-media { background: var(--surface2); min-height: 220px; overflow: hidden; }
+  .proj-media img { width: 100%; height: 100%; object-fit: cover; min-height: 220px; }
+  .proj-media--illustration .scene { position: relative; width: 100%; height: 100%; min-height: 220px; background: linear-gradient(180deg, #171C28, #0D111A); }
+  .proj-media--illustration .box { position: absolute; border: 1.5px solid var(--accent); border-radius: 2px; }
+  .proj-media--illustration .box i { position: absolute; top: -1.2rem; left: -1px; font-style: normal; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .62rem; color: var(--accent); background: var(--surface2); padding: 1px 5px; white-space: nowrap; }
+  .proj-media--illustration .b1 { left: 16%; top: 40%; width: 32%; height: 34%; }
+  .proj-media--illustration .b2 { left: 56%; top: 52%; width: 26%; height: 26%; border-color: var(--accent2); }
+  .proj-media--illustration .b2 i { color: var(--accent2); }
+  .proj-body { padding: 1.6rem 1.8rem; }
+  .proj-body .when { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .74rem; color: var(--muted); margin-bottom: .7rem; }
+  .proj-body h3 { margin: 0 0 .6rem; font-size: 1.2rem; }
+  .proj-body > p.summary { margin: 0 0 1rem; color: var(--muted); font-size: .92rem; line-height: 1.6; }
+  .proj-body ul { margin: 0 0 1.2rem; padding-left: 1.1rem; color: var(--muted); font-size: .87rem; line-height: 1.6; }
+  .proj-body li { margin-bottom: .32rem; }
+  .proj-body li:last-child { margin-bottom: 0; }
+  .proj-link { display: inline-flex; align-items: center; gap: .4rem; color: var(--accent); text-decoration: none; font-size: .84rem; font-weight: 600; }
+  .proj-link:hover { text-decoration: underline; }
+  .proj-private { display: inline-block; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .78rem; color: var(--muted); border: 1px solid var(--line); padding: .4rem .8rem; border-radius: 999px; }
+
+  /* ---------- contact ---------- */
+  .contact { padding-bottom: 9rem; }
+  .contact-links { display: flex; flex-wrap: wrap; gap: 1.6rem; margin-top: 1.6rem; }
+  .contact-links a { color: var(--ink); text-decoration: none; font-size: .95rem; border-bottom: 1px solid var(--line); padding-bottom: 3px; transition: border-color .2s ease, color .2s ease; }
+  .contact-links a:hover { color: var(--accent); border-color: var(--accent); }
+  a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+  footer { text-align: left; padding: 2rem 1.75rem 3rem; color: var(--muted); font-size: .8rem; }
+  footer .wrap { border-top: 1px solid var(--line); padding-top: 1.4rem; }
+</style>
 </head>
-<body class="bg-black text-gray-300 min-h-screen">
+<body>
 
-    <div class="container mx-auto max-w-6xl bg-black rounded-lg p-4 md:p-8">
+<div class="progress"><div class="fill" id="progressFill"></div></div>
 
-        <nav class="sticky top-0 z-50 mb-8 bg-gray-800 bg-opacity-90 backdrop-blur-sm rounded-lg shadow-lg p-4 flex justify-between items-center">
-            <div class="space-x-4 md:space-x-6 text-sm md:text-base">
-                <a href="#summary" class="text-gray-300 hover:text-white transition duration-200">Profile</a>
-                <a href="#experience" class="text-gray-300 hover:text-white transition duration-200">Experience</a>
-                <a href="#skills" class="text-gray-300 hover:text-white transition duration-200">Skills</a>
-                <a href="#projects" class="text-gray-300 hover:text-white transition duration-200">Projects</a>
-                <a href="#contact-info" class="text-gray-300 hover:text-white transition duration-200">Contact</a>
-                </div>
-            <div>
-                <a href="mailto:kimigj999666@gmail.com" class="bg-gray-700 hover:bg-gray-600 text-white text-sm py-2 px-4 rounded-lg transition duration-200 border border-gray-600">
-                    Send Mail
-                </a>
-            </div>
-        </nav>
-        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 pt-4">
+<header class="topbar">
+  <span class="name">Haoming Guo</span>
+  <a class="cta" href="mailto:kimigj999666@gmail.com">Email</a>
+</header>
 
-            <div class="md:col-span-1 space-y-8">
-                <div class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg text-center">
-                     <div class="w-32 h-32 md:w-40 md:h-40 mx-auto rounded-full mb-4 overflow-hidden">
-                        <img src="self1.jpg" alt="Haoming Guo" class="w-full h-full object-cover" onerror="this.onerror=null; this.src='https://placehold.co/160x160/6B7280/FFFFFF?text=Photo';">
-                     </div>
-                </div>
+<nav class="dotnav" id="dotnav">
+  <button data-target="hero" class="active"><span class="lbl">Intro</span></button>
+  <button data-target="education"><span class="lbl">Education</span></button>
+  <button data-target="skills"><span class="lbl">Skills</span></button>
+  <button data-target="experience"><span class="lbl">Experience</span></button>
+  <button data-target="projects"><span class="lbl">Projects</span></button>
+  <button data-target="contact"><span class="lbl">Contact</span></button>
+</nav>
 
-                <section id="education" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Education</h2>
-                    <div class="space-y-4">
-                        <div>
-                            <p class="font-medium text-white">University of Southern California</p>
-                            <p class="text-sm text-gray-400">MS, Applied Data Science (GPA: 3.8)</p>
-                            <p class="text-xs text-gray-500">Aug 2023 - Dec 2025 (Expected)</p>
-                        </div>
-                        <div>
-                            <p class="font-medium text-white">University of Liverpool</p>
-                            <p class="text-sm text-gray-400">BS, Computer Science (First Class GPA: 3.7)</p>
-                            <p class="text-xs text-gray-500">Sept 2019 - Jun 2023</p>
-                        </div>
-                         <div>
-                            <p class="font-medium text-white">Xi'an Jiaotong-Liverpool University</p>
-                            <p class="text-sm text-gray-400">BS, Information and Computing Science (GPA: 3.7)</p>
-                            <p class="text-xs text-gray-500">Sept 2019 - Jun 2023</p>
-                        </div>
-                    </div>
-                </section>
+<section class="hero" id="hero">
+  <div class="blob"></div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <p class="eyebrow hero-line" style="--i:0">Applied Data Science &middot; Machine Learning</p>
+        <h1 class="hero-name hero-line" style="--i:1">Haoming Guo</h1>
+        <p class="hero-role hero-line" style="--i:2">Applied Data Scientist &middot; Machine Learning Engineer</p>
+        <p class="hero-tag hero-line" style="--i:3">MS in Applied Data Science from USC. I design, train, and ship machine learning models across computer vision, generative modeling, and retrieval-augmented systems &mdash; from fine-tuning DETR on KITTI to building a full RAG chatbot from scratch.</p>
+        <div class="hero-cue hero-line" style="--i:4"><span class="chev"></span> Scroll</div>
+      </div>
+      <div class="hero-photo hero-line" style="--i:1">
+        <img src="self1-web.jpg" alt="Portrait of Haoming Guo" onerror="this.parentElement.style.display='none';">
+      </div>
+    </div>
+  </div>
+</section>
 
-                <section id="contact-info" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Contact Info</h2>
-                    <div class="space-y-3">
-                        <div>
-                            <p class="font-medium text-white">Phone</p>
-                            <p class="text-sm text-gray-400">(818) 961-1075</p>
-                        </div>
-                        <div>
-                            <p class="font-medium text-white">Email</p>
-                            <p class="text-sm text-gray-400 break-words">kimigj999666@gmail.com</p>
-                        </div>
-                        <div>
-                            <p class="font-medium text-white">Location</p>
-                            <p class="text-sm text-gray-400">Los Angeles, CA 90015</p>
-                        </div>
-                        <div class="flex items-center space-x-4 mt-3"> 
-                            <a href="https://www.linkedin.com/in/kimi-haoming/" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-blue-400 transition duration-200" aria-label="LinkedIn Profile">
-                                <i class="fab fa-linkedin-in fa-2x"></i> 
-                            </a>
-                            <a href="https://github.com/Kym1ng" target="_blank" rel="noopener noreferrer" class="text-gray-400 hover:text-white transition duration-200" aria-label="GitHub Profile">
-                                <i class="fab fa-github fa-2x"></i> 
-                            </a>
-                        </div>
-                    </div>
-                </section>
-            </div> <div class="md:col-span-3 space-y-8">
-                <header class="mb-6 md:mb-0" id="header">
-                    <h1 class="text-4xl md:text-5xl font-bold text-white">Haoming Guo</h1>
-                    <p class="text-lg text-gray-400 mt-1">Applied Data Scientist | Machine Learning Engineer</p>
-                </header>
+<section id="education">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="--i:0">Where I studied</p>
+    <h2 class="section-title reveal" style="--i:1">Education</h2>
+    <div class="edu-grid">
+      <div class="edu-card reveal" style="--i:2">
+        <div class="when">Aug 2023 &ndash; Dec 2025</div>
+        <h3>MS, Applied Data Science</h3>
+        <p>University of Southern California &middot; GPA 3.85</p>
+      </div>
+      <div class="edu-card reveal" style="--i:3">
+        <div class="when">Sep 2019 &ndash; Jun 2023</div>
+        <h3>BS, Computer Science</h3>
+        <p>University of Liverpool &middot; First Class, GPA 3.7</p>
+      </div>
+      <div class="edu-card reveal" style="--i:4">
+        <div class="when">Sep 2019 &ndash; Jun 2023</div>
+        <h3>BS, Information &amp; Computing Science</h3>
+        <p>Xi'an Jiaotong&ndash;Liverpool University &middot; GPA 3.7</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-                <section id="summary" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Professional Profile</h2>
-                    <p class="text-gray-300">
-                    Driven Applied Data Science master's student specializing in <strong>Machine Learning Engineering</strong>. I have hands-on experience designing, implementing, and optimizing a diverse range of machine learning models – including <strong>DETR Transformers</strong> for <strong>Computer Vision</strong> tasks like <strong>object detection</strong>, <strong>Generative Models</strong> for cortex thickness image (<strong>GANs</strong>), <strong>Recommendation Systems</strong> for user rating prediction, and <strong>RAG</strong> for <strong>LLM</strong> tasks, primarily utilizing <strong>PyTorch</strong>. 
-                    <p>
-                </section>
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="--i:0">What I work with</p>
+    <h2 class="section-title reveal" style="--i:1">Skills</h2>
 
-                <section id="experience" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Working Experience</h2>
-                    <div class="space-y-6">
-                        <div class="flex space-x-3">
-                            <div class="w-10 h-10 bg-gray-600 rounded flex items-center justify-center text-xs text-white mt-1 flex-shrink-0">CHLV</div>
-                            <div class="experience-details flex-1">
-                                <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
-                                    <h3 class="text-lg font-medium text-white">Machine Learning Engineer Intern</h3>
-                                    <span class="text-xs text-gray-500 mt-1 sm:mt-0">Jan 2025 – Apr 2025</span>
-                                </div>
-                                <p class="text-sm font-medium text-gray-400 mb-1">Henan Changlv Group Real Estate Co,. Ltd.</p>
-                                <ul class="text-sm text-gray-300">
-                                    <li>Implemented an AI-driven system for parking management, encompassing occupancy tracking and multi-violation detection.</li>
-                                    <li>Implemented a PyTorch dataset class for KITTI and built the KITTI API by transforming the label to coco-like format.</li>
-                                    <li>Fine-tuned a pre-trained DETR model by customizing its final classification layer to align with KITTI’s label mapping and conducting extensive hyperparameter optimization, resulting in a substantial increase (12%) in detection performance as measured by average AP and enabling seamless model evaluation with enhanced performance.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="flex space-x-3">
-                             <div class="w-10 h-10 bg-gray-600 rounded flex items-center justify-center text-xs text-white mt-1 flex-shrink-0">INI</div>
-                            <div class="experience-details flex-1">
-                                <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
-                                     <h3 class="text-lg font-medium text-white">Research Assistant</h3>
-                                     <span class="text-xs text-gray-500 mt-1 sm:mt-0">Feb 2024 - Jan 2025</span>
-                                </div>
-                                <p class="text-sm font-medium text-gray-400 mb-1">USC INI (Mark and Mary Stevens Neuroimaging and Informatics Institute)</p>
-                                <ul class="text-sm text-gray-300">
-                                    <li>Developed a DCN-GAN in PyTorch for cortex thickness mesh generation, enhancing data augmentation.</li>
-                                    <li>Designed model with ResNet blocks and attention layers, reducing FID score by 41.52%.</li>
-                                    <li>Optimized model on GPU clusters using Omegaconf and implemented SciPy mesh visualization.</li>
-                                    <li>Improved GAN stability using WGAN and WGANGP techniques.</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="flex space-x-3">
-                             <div class="w-10 h-10 bg-gray-600 rounded flex items-center justify-center text-xs text-white mt-1 flex-shrink-0">Eth</div>
-                            <div class="experience-details flex-1">
-                                <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
-                                     <h3 class="text-lg font-medium text-white">Software Engineering Intern</h3>
-                                     <span class="text-xs text-gray-500 mt-1 sm:mt-0">Nov 2023 - Jan 2024</span>
-                                </div>
-                                <p class="text-sm font-medium text-gray-400 mb-1">Eth Tech</p>
-                                <ul class="text-sm text-gray-300">
-                                    <li>Implemented distributed e-commerce MongoDB system and backend CRUD operations with Tkinter/PyMongo.</li>
-                                    <li>Developed a Streamlit-based query interface.</li>
-                                    <li>Designed MongoDB sharding key, reducing query latency by 50%.</li>
-                                    <li>Built a real-time DB on AWS EC2 using REST API/cURL.</li>
-                                    <li>Visualized transaction data using D3.js, Vue, and Deck.gl.</li>
-                                </ul>
-                            </div>
-                        </div>
-                         <div class="flex space-x-3">
-                             <div class="w-10 h-10 bg-gray-600 rounded flex items-center justify-center text-xs text-white mt-1 flex-shrink-0">Yisen</div>
-                            <div class="experience-details flex-1">
-                                <div class="flex flex-col sm:flex-row justify-between sm:items-center mb-1">
-                                     <h3 class="text-lg font-medium text-white">Machine Learning Engineer Intern</h3>
-                                     <span class="text-xs text-gray-500 mt-1 sm:mt-0">Aug 2023 - Oct 2023</span>
-                                </div>
-                                <p class="text-sm font-medium text-gray-400 mb-1">Yisen Tech</p>
-                                <ul class="text-sm text-gray-300">
-                                    <li>Developed a hybrid recommendation system using Yelp data.</li>
-                                    <li>Processed large-scale data using Spark RDD.</li>
-                                    <li>Improved collaborative filtering with an XGBoost model, achieving 95.1% accuracy (6% boost).</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </section>
+    <div class="skill-group">
+      <h3 class="reveal" style="--i:0">Vision &amp; Generative</h3>
+      <div class="chips">
+        <span class="chip reveal" style="--i:1">PyTorch</span>
+        <span class="chip reveal" style="--i:2">TensorFlow</span>
+        <span class="chip reveal" style="--i:3">DETR</span>
+        <span class="chip reveal" style="--i:4">GANs</span>
+        <span class="chip reveal" style="--i:5">Object Detection</span>
+        <span class="chip reveal" style="--i:6">Object Tracking</span>
+      </div>
+    </div>
 
-                <section id="skills" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Skills</h2>
-                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <div>
-                            <h3 class="font-semibold text-white mb-2">Machine Learning</h3>
-                            <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
-                                <li>Object Detection/Tracking</li>
-                                <li>Generative Models (GANs)</li>
-                                <li>Recommendation Systems</li>
-                                <li>RAG with MCP</li>
-                            </ul>
-                        </div>
-                         <div>
-                            <h3 class="font-semibold text-white mb-2">Data Management & Viz</h3>
-                            <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
-                                <li>Distributed Systems (MongoDB, MapReduce,Spark)</li>
-                                <li>Visualization (D3.js, Google Charts, Deck.gl)</li>
-                            </ul>
-                        </div>
-                         <div>
-                            <h3 class="font-semibold text-white mb-2">Frontend & Other</h3>
-                            <ul class="list-disc list-inside text-sm text-gray-400 space-y-1">
-                                <li>React.js, Vue</li>
-                                <li>Streamlit</li>
-                                <li>Docker & Git</li>
-                            </ul>
-                        </div>
-                    </div>
-                 </section>
+    <div class="skill-group">
+      <h3 class="reveal" style="--i:0">Language &amp; Retrieval</h3>
+      <div class="chips">
+        <span class="chip reveal" style="--i:1">LangChain</span>
+        <span class="chip reveal" style="--i:2">RAG</span>
+        <span class="chip reveal" style="--i:3">Word Embeddings</span>
+        <span class="chip reveal" style="--i:4">OpenAI API</span>
+      </div>
+    </div>
 
-                 <section id="projects" class="bg-gradient-to-br from-gray-800 to-gray-900 p-6 rounded-lg shadow-lg">
-                    <h2 class="text-xl font-semibold mb-4 text-white border-b border-gray-700 pb-2">Selected Projects</h2>
-                    <div class="space-y-4">
-                        <div>
-                            <h3 class="font-medium text-white">CNN-Based Brain Tumor Segmentation</h3>
-                            <p class="text-sm text-gray-400">Implemented U-Net CNN, achieved 0.95 dice score. Won Best CV Project Award (Imperial College DSSC 2022).</p>
-                            <p class="text-xs text-gray-500">June 2022 - July 2022</p>
-                        </div>
-                         <div>
-                            <h3 class="font-medium text-white">Object Detection with DETR on KITTI</h3>
-                            <p class="text-sm text-gray-400">Implemented PyTorch dataset/API for KITTI, fine-tuned DETR, increased AP by 12%.</p>
-                             <p class="text-xs text-gray-500">Jan 2024 - Present</p>
-                        </div>
-                        <div class="pt-2">
-                             <a href="projects.html" class="text-sm text-blue-400 hover:text-blue-300">View All Projects &rarr;</a>
-                        </div>
-                    </div>
-                </section>
+    <div class="skill-group">
+      <h3 class="reveal" style="--i:0">Data &amp; Systems</h3>
+      <div class="chips">
+        <span class="chip reveal" style="--i:1">MongoDB</span>
+        <span class="chip reveal" style="--i:2">MapReduce</span>
+        <span class="chip reveal" style="--i:3">Distributed Sharding</span>
+        <span class="chip reveal" style="--i:4">GPU Cluster Acceleration</span>
+      </div>
+    </div>
 
-                </div> </div> <footer class="text-center mt-12 py-4 border-t border-gray-700">
-            <p class="text-sm text-gray-500">&copy; 2025 Haoming Guo</p>
-        </footer>
+    <div class="skill-group">
+      <h3 class="reveal" style="--i:0">Frontend &amp; Viz</h3>
+      <div class="chips">
+        <span class="chip reveal" style="--i:1">D3.js</span>
+        <span class="chip reveal" style="--i:2">React</span>
+        <span class="chip reveal" style="--i:3">Streamlit</span>
+        <span class="chip reveal" style="--i:4">Vue</span>
+      </div>
+    </div>
+  </div>
+</section>
 
-    </div> </body>
+<section id="experience">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="--i:0">Where I've worked</p>
+    <h2 class="section-title reveal" style="--i:1">Experience</h2>
+
+    <div class="timeline" id="timeline">
+      <div class="rail-track"></div>
+      <div class="rail-fill" id="railFill"></div>
+
+      <div class="tl-item reveal-side" style="--dx:-26px" data-tl>
+        <div class="tl-dot"></div>
+        <div class="when">Jan &ndash; Apr 2025</div>
+        <h3>Machine Learning Engineer Intern</h3>
+        <p class="org">Henan Changlv Group Real Estate Co., Ltd.</p>
+        <ul>
+          <li>Implemented an AI-driven system for parking management, encompassing occupancy tracking and multi-violation detection.</li>
+          <li>Implemented a PyTorch dataset class for KITTI and built the KITTI API by transforming the label to a COCO-like format.</li>
+          <li>Fine-tuned a pre-trained DETR model by customizing its final classification layer to align with KITTI's label mapping and conducting extensive hyperparameter optimization &mdash; a 12% increase in detection performance (average AP).</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal-side" style="--dx:-26px" data-tl>
+        <div class="tl-dot"></div>
+        <div class="when">Feb 2024 &ndash; Jan 2025</div>
+        <h3>Research Assistant</h3>
+        <p class="org">USC Mark &amp; Mary Stevens Neuroimaging and Informatics Institute</p>
+        <ul>
+          <li>Developed a DCN-GAN in PyTorch for cortex thickness mesh generation, enhancing data augmentation.</li>
+          <li>Designed the model with ResNet blocks and attention layers, reducing FID score by 41.52%.</li>
+          <li>Optimized training on GPU clusters using OmegaConf and implemented SciPy mesh visualization.</li>
+          <li>Improved GAN stability using weight clipping (WGAN) and gradient penalty (WGAN-GP).</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal-side" style="--dx:-26px" data-tl>
+        <div class="tl-dot"></div>
+        <div class="when">Nov 2023 &ndash; Jan 2024</div>
+        <h3>Software Engineering Intern</h3>
+        <p class="org">Eth Tech</p>
+        <ul>
+          <li>Implemented a distributed e-commerce MongoDB system with backend CRUD operations via Tkinter and PyMongo.</li>
+          <li>Developed a Streamlit-based query interface for the desktop app.</li>
+          <li>Designed a MongoDB sharding key, reducing query latency by 50%.</li>
+          <li>Built a real-time database on AWS EC2, using cURL over a REST API.</li>
+          <li>Visualized transaction data using D3.js, Vue, and Deck.gl.</li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal-side" style="--dx:-26px" data-tl>
+        <div class="tl-dot"></div>
+        <div class="when">Aug &ndash; Oct 2023</div>
+        <h3>Machine Learning Engineer Intern</h3>
+        <p class="org">Yisen Tech</p>
+        <ul>
+          <li>Developed a hybrid recommendation system for personalized user recommendations using Yelp rating data.</li>
+          <li>Processed large-scale data using Spark RDD, optimizing feature extraction and transformation.</li>
+          <li>Improved item-based collaborative filtering by integrating an XGBoost model, reaching 95.1% accuracy (6% boost over baseline).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="--i:0">Selected work</p>
+    <h2 class="section-title reveal" style="--i:1">Projects</h2>
+
+    <div class="proj-list">
+
+      <div class="proj-card reveal-scale" style="--i:0">
+        <div class="proj-media proj-media--illustration">
+          <div class="scene">
+            <span class="box b1"><i>car 0.94</i></span>
+            <span class="box b2"><i>car 0.88</i></span>
+          </div>
+        </div>
+        <div class="proj-body">
+          <div class="when">Jan 2024 &ndash; Present</div>
+          <h3>Object Detection with DETR on KITTI Dataset</h3>
+          <p class="summary">Fine-tuned a DEtection TRansformer for object detection on the KITTI dataset, building a custom PyTorch data pipeline and adapting the model's classification head to KITTI's label space.</p>
+          <ul>
+            <li>Implemented the KITTI API by transforming labels into a COCO-like format.</li>
+            <li>Customized the final classification layer of a pre-trained DETR model to align with KITTI's classes.</li>
+            <li>Achieved a 12% increase in detection performance (average AP) through extensive hyperparameter tuning.</li>
+            <li>Built an evaluation pipeline with enhanced performance metrics and reporting.</li>
+          </ul>
+          <span class="proj-private">Code private</span>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-scale" style="--i:1">
+        <div class="proj-media">
+          <img src="coupon-chat-web.jpg" alt="AI-Powered Coupon Discovery Chatbot interface">
+        </div>
+        <div class="proj-body">
+          <div class="when">Personal Project</div>
+          <h3>AI-Powered Coupon Discovery Chatbot</h3>
+          <p class="summary">Dual-mode web chatbot that lets users search 2,510+ brands and categories scraped from SimplyCodes &mdash; a fast Basic Search API alongside an OpenAI-powered AI Chat mode with semantic search and conversational memory.</p>
+          <ul>
+            <li>FastAPI backend with Basic and AI endpoints, plus a web UI with a mode toggle.</li>
+            <li>Playwright scraper discovers categories and coupons, building a 3-level tree with retry logic and anti-detection (19 main categories, 1,428 level-2, 1,082 level-3).</li>
+            <li>LangChain-powered semantic retrieval over embedding-based vector search, with conversational memory and RAG for smarter recommendations.</li>
+          </ul>
+          <a class="proj-link" href="https://github.com/Kym1ng/AI-Powered-Coupon-Discovery-Chatbot" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-scale" style="--i:2">
+        <div class="proj-media">
+          <img src="amz.png" alt="Distributed Amazon product database architecture">
+        </div>
+        <div class="proj-body">
+          <div class="when">USC Viterbi &middot; Group Project</div>
+          <h3>Distributed Databases for Amazon Products</h3>
+          <p class="summary">A distributed MongoDB system for Amazon product data, focused on performance, scalability, and a usable interface for e-commerce data management.</p>
+          <ul>
+            <li>Designed a schema for product attributes and sharded on 'asin' across MongoDB nodes via hashing.</li>
+            <li>Cleaned and loaded an Amazon Fashion JSON dataset, merged with metadata.</li>
+            <li>Built a Tkinter database manager with full CRUD operations.</li>
+            <li>Built a Streamlit interface for product querying, filtering, and navigation.</li>
+            <li>Set up a dedicated backup node to improve data durability.</li>
+          </ul>
+          <a class="proj-link" href="https://github.com/Kym1ng/AmazonProductRetrieve" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        </div>
+      </div>
+
+      <div class="proj-card reveal-scale" style="--i:3">
+        <div class="proj-media">
+          <img src="LSTM.png" alt="LSTM commodity price prediction results">
+        </div>
+        <div class="proj-body">
+          <div class="when">University of Liverpool &middot; COMP390, 2022/23</div>
+          <h3>Deep Learning for Commodity Price Prediction</h3>
+          <p class="summary">Compared deep learning models for predicting commodity close prices from historical data, evaluating effectiveness across several architectures.</p>
+          <ul>
+            <li>Implemented and compared Linear Regression, SVR, LSTM, and CNN+LSTM models.</li>
+            <li>Analyzed how added features (moving averages, RSI) affected LSTM performance.</li>
+            <li>Explored CNN feature extraction across timeframes, feeding into an LSTM for prediction.</li>
+            <li>Found LSTM had the strongest relative performance for this task and dataset.</li>
+          </ul>
+          <a class="proj-link" href="https://github.com/Kym1ng/LSTM_commodity_price_pred" target="_blank" rel="noopener noreferrer">View on GitHub &rarr;</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="--i:0">Get in touch</p>
+    <h2 class="section-title reveal" style="--i:1">Let's talk</h2>
+    <p class="reveal" style="--i:2; color: var(--muted); max-width: 520px; line-height: 1.6;">Open to roles and collaborations in machine learning engineering, computer vision, and applied data science.</p>
+    <div class="contact-links reveal" style="--i:3">
+      <a href="mailto:kimigj999666@gmail.com">kimigj999666@gmail.com</a>
+      <a href="tel:+18189611075">(818) 961-1075</a>
+      <a href="https://www.linkedin.com/in/kimi-haoming/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <a href="https://github.com/Kym1ng" target="_blank" rel="noopener noreferrer">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">&copy; Haoming Guo</div>
+</footer>
+
+<script>
+  (function () {
+    var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    var revealEls = document.querySelectorAll(".reveal, .reveal-side, .reveal-scale");
+    if (reduced) {
+      revealEls.forEach(function (el) { el.classList.add("is-in"); });
+    } else {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("is-in");
+            io.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.18, rootMargin: "0px 0px -8% 0px" });
+      revealEls.forEach(function (el) { io.observe(el); });
+    }
+
+    var tlItems = document.querySelectorAll("[data-tl]");
+    if (!reduced) {
+      var io2 = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) entry.target.classList.add("is-in");
+        });
+      }, { threshold: 0.4 });
+      tlItems.forEach(function (el) { io2.observe(el); });
+    } else {
+      tlItems.forEach(function (el) { el.classList.add("is-in"); });
+    }
+
+    var progressFill = document.getElementById("progressFill");
+    var railFill = document.getElementById("railFill");
+    var timeline = document.getElementById("timeline");
+    var ticking = false;
+
+    function update() {
+      ticking = false;
+      var doc = document.documentElement;
+      var scrollTop = window.scrollY || doc.scrollTop;
+      var max = doc.scrollHeight - doc.clientHeight;
+      var pct = max > 0 ? (scrollTop / max) * 100 : 0;
+      progressFill.style.width = pct + "%";
+
+      if (timeline) {
+        var rect = timeline.getBoundingClientRect();
+        var vh = window.innerHeight;
+        var total = rect.height;
+        var visibleStart = vh * 0.8;
+        var raw = (visibleStart - rect.top) / total;
+        var clamped = Math.max(0, Math.min(1, raw));
+        railFill.style.height = (clamped * 100) + "%";
+      }
+    }
+    function onScroll() {
+      if (!ticking) { window.requestAnimationFrame(update); ticking = true; }
+    }
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", onScroll);
+    update();
+
+    var dots = document.querySelectorAll("#dotnav button");
+    var sections = Array.prototype.map.call(dots, function (d) {
+      return document.getElementById(d.getAttribute("data-target"));
+    });
+    dots.forEach(function (dot, i) {
+      dot.addEventListener("click", function () {
+        sections[i].scrollIntoView({ behavior: reduced ? "auto" : "smooth", block: "start" });
+      });
+    });
+    var io3 = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          var idx = sections.indexOf(entry.target);
+          dots.forEach(function (d) { d.classList.remove("active"); });
+          if (idx > -1) dots[idx].classList.add("active");
+        }
+      });
+    }, { threshold: 0.5 });
+    sections.forEach(function (s) { if (s) io3.observe(s); });
+  })();
+</script>
+
+</body>
 </html>
