@@ -1,90 +1,95 @@
-# Greeting 👋 Check My [portfolio website](https://kym1ng.github.io/Kym1ng/index.html)
+<div align="center">
+  <img src="matrix-banner.svg" alt="Haoming Guo" width="100%" />
+</div>
 
-## I'm Haoming Guo, aka Kimi G
+<div align="center">
 
-Discipline is freedom. True independence comes from mastering yourself, not being a slave to momentary desires.
+[![Portfolio](https://img.shields.io/badge/-PORTFOLIO-00FF66?style=for-the-badge&logo=googlechrome&logoColor=000000)](https://kym1ng.github.io/Kym1ng/index.html)
+[![Email](https://img.shields.io/badge/-EMAIL-00FF66?style=for-the-badge&logo=gmail&logoColor=000000)](mailto:kimigj999666@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-LINKEDIN-00FF66?style=for-the-badge&logo=linkedin&logoColor=000000)](https://www.linkedin.com/in/kimi-haoming/)
+[![GitHub](https://img.shields.io/badge/-GITHUB-00FF66?style=for-the-badge&logo=github&logoColor=000000)](https://github.com/Kym1ng)
+
+</div>
+
+<br/>
+
+### `$ whoami`
+
+Haoming Guo — aka **Kimi G**. Applied Data Scientist / Machine Learning Engineer working across computer vision, generative models, and retrieval-augmented systems.
+
+> Discipline is freedom. True independence comes from mastering yourself, not being a slave to momentary desires.
 
 ---
 
-### Education
+### `$ cat education.log`
 
-- **MS, Applied Data Science**  
-  *University of Southern California* (GPA: 3.85/4.0)  
-  Aug 2023 – Dec 2025
-
-- **BS, Computer Science** (First Class, GPA: 3.7/4.0)  
-  *University of Liverpool*  
-  Sep 2019 – Jun 2023
-
-- **BS, Information and Computing Science** (GPA: 3.7/4.0)  
-  *Xi’an Jiaotong–Liverpool University*  
-  Sep 2019 – Jun 2023
+| Degree | Institution | Dates | GPA |
+| --- | --- | --- | --- |
+| MS, Applied Data Science | University of Southern California | Aug 2023 – Dec 2025 | 3.85/4.0 |
+| BS, Computer Science (First Class) | University of Liverpool | Sep 2019 – Jun 2023 | 3.7/4.0 |
+| BS, Information & Computing Science | Xi'an Jiaotong–Liverpool University | Sep 2019 – Jun 2023 | 3.7/4.0 |
 
 ---
 
-### Experience
+### `$ ps -ef | grep experience`
 
-💻 **Machine Learning Engineer Intern**  
-*Henan Changlu Group Real Estate Co., Ltd.*  
-Jan 2025 – Apr 2025  
+**Machine Learning Engineer Intern** — Henan Changlv Group Real Estate Co., Ltd. `[Jan 2025 – Apr 2025]`
 - Implemented an AI-driven system for parking management, encompassing occupancy tracking and multi-violation detection.
 - Implemented a PyTorch dataset class for KITTI and built the KITTI API by transforming the labels to a COCO-like format.
-- Fine-tuned a pre-trained DETR model by customizing its final classification layer to align with KITTI’s label mapping and conducting extensive hyperparameter optimization, resulting in a 12% increase in detection performance (average AP).
-- Enabled seamless model evaluation with enhanced performance metrics and reporting.
+- Fine-tuned a pre-trained DETR model by customizing its final classification layer to align with KITTI's label mapping and conducting extensive hyperparameter optimization, resulting in a 12% increase in detection performance (average AP).
 
-💻 **Research Assistant**  
-*USC Mark & Mary Stevens Neuroimaging and Informatics Institute (INI)*  
-Feb 2024 – Jan 2025  
+**Research Assistant** — USC Mark & Mary Stevens Neuroimaging and Informatics Institute (INI) `[Feb 2024 – Jan 2025]`
 - Developed a DCN-GAN in PyTorch to generate cortex thickness meshes for data augmentation and Mesh Diffusion modeling, enhancing dataset diversity and training robustness.
-- Designed and implemented the model with ResNet blocks and attention layers to improve depth and feature extraction, reducing FID for mesh generation by 41.52%.
-- Optimized and fine-tuned training on GPU clusters using YAML-based configuration control with OmegaConf; implemented mesh visualization using SciPy for enhanced interpretability.
-- Improved GAN stability by applying weight clipping for WGAN and gradient penalty (WGAN-GP), achieving balanced discriminator–generator convergence.
+- Designed the model with ResNet blocks and attention layers to improve depth and feature extraction, reducing FID for mesh generation by 41.52%.
+- Optimized and fine-tuned training on GPU clusters using YAML-based configuration control with OmegaConf; implemented mesh visualization using SciPy.
+- Improved GAN stability by applying weight clipping (WGAN) and gradient penalty (WGAN-GP), achieving balanced discriminator–generator convergence.
 
-💻 **Software Engineering Intern**  
-*Eth Tech*  
-Nov 2023 – Jan 2024  
-- Implemented a distributed e-commerce database system using MongoDB with the Amazon Fashion Products dataset; built backend CRUD operations with Tkinter and PyMongo plus a Streamlit-based desktop query interface to enhance user experience.
+**Software Engineering Intern** — Eth Tech `[Nov 2023 – Jan 2024]`
+- Implemented a distributed e-commerce database system using MongoDB with the Amazon Fashion Products dataset; built backend CRUD operations with Tkinter and PyMongo plus a Streamlit-based query interface.
 - Optimized data distribution by designing an effective hash key for MongoDB sharding, reducing query latency by 50% and improving data reliability through distributed backup strategies.
-- Built a lightweight real-time database on AWS EC2, leveraging cURL to communicate via a REST API for efficient data storage and retrieval.
-- Visualized overall transaction data using D3.js, Vue and Deck.gl, rendering interactive, map-based dashboards to reveal spatial distribution and transaction patterns.
+- Built a lightweight real-time database on AWS EC2, leveraging cURL to communicate via a REST API.
+- Visualized overall transaction data using D3.js, Vue, and Deck.gl, rendering interactive, map-based dashboards.
 
-💻 **Machine Learning Engineer Intern**  
-*Yisen Tech*  
-Aug 2023 – Oct 2023  
+**Machine Learning Engineer Intern** — Yisen Tech `[Aug 2023 – Oct 2023]`
 - Developed a hybrid recommendation system for personalized user recommendations using Yelp rating data.
 - Processed large-scale data using Spark RDD, optimizing feature extraction and transformation for efficiency.
-- Improved item-based collaborative filtering by integrating an XGBoost-based model, incorporating key features, and validating their impact through RMSE analysis.
-- Achieved 95.1% accuracy, representing a 6% performance boost compared to the baseline.
+- Improved item-based collaborative filtering by integrating an XGBoost-based model, achieving 95.1% accuracy — a 6% boost over baseline.
 
 ---
 
-### Selected Projects
+### `$ ls ./projects/`
 
-💻 **CNN-Based Brain Tumor Segmentation**  
-- Implemented a U-Net CNN model for brain MRI image segmentation, conducted hyperparameter tuning and architectural optimization, achieving a 0.95 dice score for tumor segmentation.
-- Earned the Best Computer Vision Project award at Imperial College London's Data Science Summer Camp 2022.
+- **[AI-Powered Coupon Discovery Chatbot](https://github.com/Kym1ng/AI-Powered-Coupon-Discovery-Chatbot)** — dual-mode chatbot over 2,510+ scraped brands/categories; FastAPI backend, Playwright scraper, LangChain RAG with conversational memory.
+- **Object Detection with DETR on KITTI Dataset** — custom PyTorch/COCO-style data pipeline, fine-tuned DETR classification head, +12% average precision.
+- **[Distributed Databases for Amazon Products](https://github.com/Kym1ng/AmazonProductRetrieve)** — sharded MongoDB system for Amazon product data, Tkinter CRUD console, Streamlit query interface.
+- **[Deep Learning for Commodity Price Prediction](https://github.com/Kym1ng/LSTM_commodity_price_pred)** — compared Linear Regression, SVR, LSTM, and CNN+LSTM for commodity price forecasting.
+- **CNN-Based Brain Tumor Segmentation** — U-Net model for MRI segmentation, 0.95 dice score, Best Computer Vision Project @ Imperial College London DSSC 2022.
 
-💻 **Object Detection with DETR on KITTI Dataset**  
-- Implemented a PyTorch dataset class for KITTI and build the KITTI API by transforming the label to coco-like format.
-- Fine-tuned a pre-trained DETR model by customizing its final classification layer to align with KITTI’s label mapping and conducting extensive hyperparameter optimization, resulting in a substantial increase (12%) in detection performance as measured by average AP and enabling seamless model evaluation with enhanced performance metrics.
-
----
-
-### Technical Skills
-
-- **Machine Learning & Deep Learning**: PyTorch, TensorFlow; image segmentation, object detection, object tracking, generative models, word embeddings, GPU cluster acceleration  
-- **Data Management & Visualization**: MongoDB, MapReduce, distributed file systems; data mining, D3.js, Google Charts, Matplotlib, ggplot2  
-- **Frontend & Tools**: React.js, Vue, Streamlit, D3.js; proficient in Python, Java, C++, C#, SQL, R
+*Full write-ups with images live on the portfolio: [kym1ng.github.io/Kym1ng](https://kym1ng.github.io/Kym1ng/index.html#projects)*
 
 ---
 
-### Get in Touch
+### `$ cat skills.json`
 
-I’m always excited to collaborate on innovative projects and explore advances in data science, machine learning, and software engineering. Feel free to reach out:
+```json
+{
+  "vision_generative": ["PyTorch", "TensorFlow", "DETR", "GANs", "Object Detection", "Segmentation"],
+  "language_retrieval": ["LangChain", "RAG", "Word Embeddings", "OpenAI API"],
+  "data_systems": ["MongoDB", "MapReduce", "Distributed Sharding", "GPU Cluster Acceleration"],
+  "frontend_viz": ["D3.js", "React", "Streamlit", "Vue"]
+}
+```
 
-- Email: [kimigj999666@gmail.com](mailto:kimigj999666@gmail.com)
-- Connect on [LinkedIn](https://www.linkedin.com/in/kimi-haoming/)
-- Explore more on [GitHub](https://github.com/Kym1ng)
+---
 
-**Love & Peace,  
-Kimi**
+### `$ ./contact.sh`
+
+<div align="center">
+
+[![Email](https://img.shields.io/badge/-kimigj999666%40gmail.com-000000?style=flat-square&logo=gmail&logoColor=00FF66)](mailto:kimigj999666@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/-kimi--haoming-000000?style=flat-square&logo=linkedin&logoColor=00FF66)](https://www.linkedin.com/in/kimi-haoming/)
+[![GitHub](https://img.shields.io/badge/-Kym1ng-000000?style=flat-square&logo=github&logoColor=00FF66)](https://github.com/Kym1ng)
+
+</div>
+
+<p align="center"><sub>connection secure · love &amp; peace, Kimi</sub></p>
