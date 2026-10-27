@@ -3,24 +3,24 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0B0E14">
+<meta name="theme-color" content="#000000">
 <meta name="description" content="Haoming Guo — Applied Data Scientist &amp; Machine Learning Engineer. Computer vision, generative models, and retrieval-augmented systems, from fine-tuning DETR on KITTI to a full RAG chatbot.">
 <meta property="og:title" content="Haoming Guo — Applied Data Scientist">
 <meta property="og:description" content="Computer vision, generative models, and retrieval-augmented systems — projects and experience.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230B0E14'/%3E%3Ctext x='50' y='64' font-size='42' font-family='Georgia,serif' fill='%236C8CFF' text-anchor='middle'%3EHG%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23000000'/%3E%3Ctext x='50' y='64' font-size='42' font-family='Georgia,serif' fill='%2300FF66' text-anchor='middle'%3EHG%3C/text%3E%3C/svg%3E">
 <title>Haoming Guo — Applied Data Scientist</title>
 <style>
   :root {
-    --bg: #0B0E14;
-    --surface: #10141C;
-    --surface2: #161B26;
-    --ink: #EDEFF5;
-    --muted: #9AA1B2;
-    --line: #232838;
-    --accent: #6C8CFF;
-    --accent-soft: rgba(108, 140, 255, 0.14);
-    --accent2: #E8A94C;
+    --bg: #000000;
+    --surface: rgba(4, 12, 7, 0.82);
+    --surface2: #07140C;
+    --ink: #E4FFEE;
+    --muted: #8DB89F;
+    --line: #134226;
+    --accent: #00FF66;
+    --accent-soft: rgba(0, 255, 102, 0.12);
+    --accent2: #7DFFB3;
   }
   * { box-sizing: border-box; }
   html { scroll-behavior: smooth; }
@@ -39,6 +39,9 @@
   a { color: inherit; }
   img { max-width: 100%; display: block; }
 
+  /* ---------- matrix rain (fixed, behind everything) ---------- */
+  #rain { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; pointer-events: none; opacity: .5; }
+
   /* ---------- progress bar ---------- */
   .progress { position: fixed; top: 0; left: 0; height: 3px; width: 100%; background: var(--line); z-index: 60; }
   .progress .fill { height: 100%; width: 0%; background: linear-gradient(90deg, var(--accent), var(--accent2)); }
@@ -47,7 +50,7 @@
   .topbar {
     position: fixed; top: 3px; left: 0; right: 0; z-index: 58;
     display: flex; justify-content: space-between; align-items: center;
-    padding: .9rem 1.5rem; background: rgba(11,14,20,0.72); backdrop-filter: blur(10px);
+    padding: .9rem 1.5rem; background: rgba(0,0,0,0.72); backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--line);
   }
   .topbar .name { font-size: .88rem; font-weight: 700; letter-spacing: -0.01em; }
@@ -147,7 +150,7 @@
   @media (max-width: 760px) { .proj-card { grid-template-columns: 1fr; } }
   .proj-media { background: var(--surface2); min-height: 220px; overflow: hidden; }
   .proj-media img { width: 100%; height: 100%; object-fit: cover; min-height: 220px; }
-  .proj-media--illustration .scene { position: relative; width: 100%; height: 100%; min-height: 220px; background: linear-gradient(180deg, #171C28, #0D111A); }
+  .proj-media--illustration .scene { position: relative; width: 100%; height: 100%; min-height: 220px; background: linear-gradient(180deg, #0A1A10, #020604); }
   .proj-media--illustration .box { position: absolute; border: 1.5px solid var(--accent); border-radius: 2px; }
   .proj-media--illustration .box i { position: absolute; top: -1.2rem; left: -1px; font-style: normal; font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: .62rem; color: var(--accent); background: var(--surface2); padding: 1px 5px; white-space: nowrap; }
   .proj-media--illustration .b1 { left: 16%; top: 40%; width: 32%; height: 34%; }
@@ -175,6 +178,8 @@
 </style>
 </head>
 <body>
+
+<canvas id="rain" aria-hidden="true"></canvas>
 
 <div class="progress"><div class="fill" id="progressFill"></div></div>
 
@@ -452,6 +457,54 @@
 <script>
   (function () {
     var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    // Binary rain: sparse, dim, slow columns so it stays background-only.
+    var canvas = document.getElementById("rain");
+    var ctx = canvas.getContext("2d");
+    if (ctx && !reduced) {
+      var glyphs = ["0", "1"];
+      var size = 18, drops = [], cols = 0, last = 0, running = true;
+      var resize = function () {
+        var dpr = Math.min(window.devicePixelRatio || 1, 2);
+        canvas.width = innerWidth * dpr; canvas.height = innerHeight * dpr;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        ctx.fillStyle = "#000"; ctx.fillRect(0, 0, innerWidth, innerHeight);
+        cols = Math.floor(innerWidth / size);
+        drops = [];
+        for (var i = 0; i < cols; i++) {
+          // ~1 in 3 columns active; the rest stay dark
+          drops.push(Math.random() < 0.33 ? Math.random() * innerHeight / size : null);
+        }
+      };
+      var frame = function (t) {
+        if (!running) return;
+        requestAnimationFrame(frame);
+        if (t - last < 70) return;   // ~14 fps: slow, calm fall
+        last = t;
+        ctx.fillStyle = "rgba(0,0,0,0.12)";
+        ctx.fillRect(0, 0, innerWidth, innerHeight);
+        ctx.font = size + "px ui-monospace, Menlo, monospace";
+        for (var i = 0; i < cols; i++) {
+          if (drops[i] === null) continue;
+          var y = drops[i] * size;
+          if (y > 0) {
+            ctx.fillStyle = "#00FF66";
+            ctx.fillText(glyphs[(Math.random() * glyphs.length) | 0], i * size, y);
+          }
+          if (y > innerHeight && Math.random() > 0.975) drops[i] = 0;
+          drops[i]++;
+        }
+      };
+      resize();
+      addEventListener("resize", resize);
+      document.addEventListener("visibilitychange", function () {
+        running = !document.hidden;
+        if (running) requestAnimationFrame(frame);
+      });
+      requestAnimationFrame(frame);
+    } else if (canvas) {
+      canvas.style.display = "none";
+    }
 
     var revealEls = document.querySelectorAll(".reveal, .reveal-side, .reveal-scale");
     if (reduced) {
