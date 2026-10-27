@@ -458,11 +458,11 @@
   (function () {
     var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-    // Matrix rain: sparse, dim, slow columns so it stays background-only.
+    // Binary rain: sparse, dim, slow columns so it stays background-only.
     var canvas = document.getElementById("rain");
     var ctx = canvas.getContext("2d");
     if (ctx && !reduced) {
-      var glyphs = "ｱｲｳｴｵｶｷｸｹｺｻｼｽｾｿﾀﾁﾂﾃﾅﾆﾇﾈﾉﾊﾋﾌﾍﾎﾏﾐﾑﾒﾓﾔﾕﾖﾗﾘﾙﾚﾛﾜﾝ0123456789".split("");
+      var glyphs = ["0", "1"];
       var size = 18, drops = [], cols = 0, last = 0, running = true;
       var resize = function () {
         var dpr = Math.min(window.devicePixelRatio || 1, 2);
